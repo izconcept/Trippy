@@ -186,12 +186,23 @@
                     console.log(uber);
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
+                    $('.sequence6').addClass('animated fadeOutDown');
+                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Alright! This is all we need for now. We're building your travel recommendations now</span></div></div>");
+                    $("#chat").append("<img src='loading.gif' class='gif'/>");
+                    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                    setTimeout(
+                        function() {
+                            $('.sequence6').remove();
+                        }, 1000);
                     var season="Summer"
                     var arrayBeen = ["San Francisco","Little Cayman"];
                     var arrayLike = ["Miami","Amsterdam"];
                     var age=21;
-                    eval(season, vibe, description, uber, uber, age, drink,arrayBeen,arrayLike,load());
-                    sequence6();
+                    setTimeout(
+                        function() {
+                            eval(season, vibe, description, uber, uber, age, drink,arrayBeen,arrayLike,load());
+                        }
+                        , 2000);
                 })
                 
             
