@@ -161,6 +161,7 @@ function load(){
 	// you will pass the value above in load
 	//calling for evaluation
 	//eval(season, vibe, description, uber, busbud, age, drinking,arrayBeen,arrayLike,response);
+	console.log("works");
 	return response;
 }
 //season, vibe, description, uber, busbud, age, drinking
