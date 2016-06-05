@@ -38,6 +38,7 @@
               setTimeout(
                   function() {
                       $("#footer").append("<div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Party</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Relax</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Sightseeing</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Expeditions</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Sports</span></div>");
+                      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
                   }
               , 2700);
           }
@@ -116,15 +117,15 @@
         
         <h1 id="mainTitle" class="animated fadeInDown">Trippy</h1>
         
-        
-        <div class="content container">
-            
+        <div class="content container ">
+
             <div id="chat">
                 <div class="row"> 
                     <div class="bubble left animated fadeInUp"><span>Welcome to Trippy, how can I help you today?</span></div>
                 </div>
             </div>
         </div>
+        
         <div class="container">
             <nav class="navbar navbar-fixed-bottom navbar-light bg-faded footer">
                 <div class="container" id="footer">
@@ -187,7 +188,7 @@
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
                     $('.sequence6').addClass('animated fadeOutDown');
-                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Alright! This is all we need for now. We're building your travel recommendations now</span></div></div>");
+                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Alright! This is all we need. We're building your travel recommendations now. This might take a while...</span></div></div>");
                     $("#chat").append("<img src='loading.gif' class='gif'/>");
                     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
                     setTimeout(
@@ -200,9 +201,28 @@
                     var age=21;
                     setTimeout(
                         function() {
-                            eval(season, vibe, description, uber, uber, age, drink,arrayBeen,arrayLike,load());
+                            eval(season, vibe, description, uber, uber, age, drink,load());
                         }
-                        , 2000);
+                        , 1000);
+                });
+                
+                $(document).on('click', '.sequence7', function() {
+                    
+                    $('.sequence8').addClass('animate fadeOutDown')
+                    
+                    var temp = $(this).find('.card-title').text();
+                    
+                    setTimeout(
+                        function() {
+                            $('.sequence8').remove();
+                        }
+                        , 500);
+                    
+                    setTimeout(
+                        function() {
+                            $("#footer").append("<div class='col-xs-3 bubble unique animated fadeInUp sequence8'><span>"+temp+"</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence8'><span>Find me flights</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence8'><span>Find me hotels</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence8'><span>Anything cheaper?</span></div>");
+                        }
+                        , 600);
                 })
                 
             
