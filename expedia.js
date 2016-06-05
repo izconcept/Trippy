@@ -22,12 +22,16 @@ function getJSON(theURL){
 
 function getFlightURL(home, destination, date){
   var flight = "http://terminal2.expedia.com:80/x/flights/search/1/";
+  home = home.replace(/ /g,"%20");
+  destination = destination.replace(/ /g,"%20");
   flight = flight.concat(home).concat("/").concat(destination).concat("/").concat(date).concat("?apikey=").concat(EXPEDIA_KEY);
   return flight;
 }
 
 function getHotelsURL(city, country, date1, date2){
   var hotels = " http://terminal2.expedia.com:80/x/mhotels/search?city=";
+  city = city.replace(/ /g,"%20");
+  country = country.replace(/ /g,"%20");
   hotels = hotels.concat(city).concat("%20").concat(country).concat("&filterUnavailable=true&sortOrder=true&checkInDate=").concat(date1).concat("&checkOutDate=").concat(date2).concat("&room1=2&apikey=").concat(EXPEDIA_KEY);
   return hotels;
 }
@@ -113,8 +117,6 @@ function setDateFrom( season){
 }
 
 function result(home, homeAirport, dest, destAirport, destCountry, season){
- var home = 'montreal';
- var homeAirport = 'YUL';
  var departDate = setDateTo(season);
  var returnDate = setDateFrom(season);
 
