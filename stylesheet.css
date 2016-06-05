@@ -11,9 +11,9 @@
 }
 #mainTitle {
     text-align: center;
-    padding-top: 50px;
     padding-bottom: 50px;
     font-family: typographEB;
+    clear: right;
 }
 
 .bubble 
@@ -76,6 +76,18 @@
 
 .botpad {
     padding-bottom: 80px;
+}
+
+#about {
+    padding: 20px;
+    float: right;
+    clear: none;
+    font-family: typographUL;
+    font-size: 1.2em;
+    color: lightgrey;
+}
+#about:hover {
+    color: grey;
 }
 
 @font-face {
