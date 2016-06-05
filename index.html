@@ -10,14 +10,9 @@
       <link rel="stylesheet" href="bootstrap.min.css">
       <link rel="stylesheet" href="animate.css" type="text/css">
       <link rel="stylesheet" href="stylesheet.css" type="text/css">
+      <script src="Algo.js"></script>
       
-      <script src="dbv1.js"></script>
       <script type="text/javascript">
-          
-          var vibe;
-          var description;
-          var drink;
-          var uber;
           
           function sequence1() {
               $(".gif").remove();
@@ -143,7 +138,8 @@
         <script>
         
             $(document).ready(function() {
-
+                response=load2();
+                console.log(response);
                 $(".sequence1").click(function() {
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>I'd like to go on vacation. Got any ideas?</span></div></div>");
                     $(this).addClass("animated fadeOutDown");
@@ -195,15 +191,15 @@
                         function() {
                             $('.sequence6').remove();
                         }, 1000);
-                    var season="Summer"
+                    var season="Summer";
                     var arrayBeen = [];
                     var arrayLike = [];
                     var age=21;
                     setTimeout(
                         function() {
-                            eval(season, vibe, description, uber, uber, age, drink,load());
+                            evaluate(season, vibe, description, uber, uber, age, drink,arrayBeen,arrayLike);
                         }
-                        , 1000);
+                        , 5000);
                 });
                 
                 $(document).on('click', '.sequence7', function() {
