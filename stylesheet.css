@@ -1,0 +1,95 @@
+.content {
+    font-size: 1.3em;
+    max-width: 720px;
+    height: 100%;
+}
+.container {
+    width: 100% !important;
+}
+#chat {
+    padding-bottom: 100px;
+}
+#mainTitle {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: typographEB;
+}
+
+.bubble 
+{
+    margin: 10px 10px;
+    padding: 8px;
+    max-width: 400px;
+    width: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+    clear: right;
+    background: #DBDBDB;
+    color: black;
+}
+.right {
+    float: right;
+    clear: left;
+    background: #0086FF;
+    color: white;
+}
+
+.bottom {
+    background: #0086FF;
+    color: white;
+    font-size: 1em;
+}
+
+.bottom:hover {
+    background: #4AA9FF;
+}
+
+.clickable:hover {
+    background: #C4F0FF !important;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+.footer {
+    align-content: center;
+    text-align: center;
+    display:inline;
+    display:inline-block;
+    height: 75px;
+    vertical-align: top;
+    font-size: 1.2em;
+}
+.gif {
+    width: 300px;
+}
+
+.pic {
+    max-width: 199px;
+}
+
+.botpad {
+    padding-bottom: 80px;
+}
+
+@font-face {
+    font-family: typographEB;
+    src: url("Typograph PRO/TYPOGRAPH PRO Extra Bold.ttf");
+}@font-face {
+    font-family: typographUL;
+    src: url("Typograph PRO/TYPOGRAPH PRO Light.ttf");
+}
+@font-face {
+    font-family: quoteBOLD;
+    src: url("quotes/roboto/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: quoteLIGHT;
+    src: url("quotes/roboto/Roboto-Thin.ttf");
+}

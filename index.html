@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      <title>Trippy Front-end</title>
+      
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <link rel="stylesheet" href="animate.css" type="text/css">
+      <link rel="stylesheet" href="stylesheet.css" type="text/css">
+      
+      
+      <script type="text/javascript">
+          
+          function sequence1() {
+              $(".gif").remove();
+              $(".sequence1").remove();
+              $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Sure, Trippy is a state of the art deep learning analytical tool used to determine your travel tendencies and recommend relevent travel locations. Please login to your Facebook.</span></div></div>");
+              $("#chat").append("<div class='row sequence2'><div class='clickable bubble left animated fadeInUp'><span>Login to Facebook</span></div></div>")
+          }
+          function sequence2() {
+              alert("Insert facebook login screen here");
+              $('.sequence2').addClass("animated fadeOutDown");
+              $("#chat").append("<img src='loading.gif' class='gif'/>");
+              setTimeout(
+                  function() {
+                    $('.sequence2').remove();
+                    $(".gif").remove();
+                    $("#chat").append("<div class='row sequence2'><div class='bubble left animated fadeInUp sequence1'><span>Perfect! What do you plan on doing while on vacation?</span></div></div>")
+                  }, 2000);
+              setTimeout(
+                  function() {
+                      $("#footer").append("<div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Party</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Relax</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Sightseeing</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Expeditions</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence3'><span>Sports</span></div>");
+                  }
+              , 2700);
+          }
+          function sequence3() {
+              $('.sequence3').addClass('animated fadeOutDown');
+              $("#chat").append("<img src='loading.gif' class='gif'/>");
+              setTimeout(
+                  function() {
+                    $('.sequence3').remove();
+                    $(".gif").remove();
+                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Great! What kind of location do you prefer?</span></div></div>");
+                  }, 1000);
+              setTimeout(
+                  function() {
+                    $("#footer").append("<div class='col-xs-3 bubble bottom animated fadeInUp sequence4'><span>City</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence4'><span>Urban</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence4'><span>Beach</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence4'><span>Island</span></div><div class='col-xs-3 bubble bottom animated fadeInUp sequence4'><span>Nature</span></div>");
+                      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                  }, 1700);
+          }
+          function sequence4() {
+              $('.sequence4').addClass('animated fadeOutDown');
+              $("#chat").append("<img src='loading.gif' class='gif'/>");
+              $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+              setTimeout(
+                  function() {
+                    $('.sequence4').remove();
+                    $(".gif").remove();
+                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Do you plan on drinking?</span></div></div>");
+                  }, 1300);
+              setTimeout(
+                  function() {
+                    $("#footer").append("<div class='col-xs-4 bubble bottom animated fadeInUp sequence5'><span>Yes</span></div><div class='col-xs-4 bubble bottom animated fadeInUp sequence5'><span>No</span></div>");
+                      $("html, body").animate({ scrollTop: $(document).height() }, 2000);
+                  }, 2000);
+          }
+          function sequence5() {
+              $('.sequence5').addClass('animated fadeOutDown');
+              $("#chat").append("<img src='loading.gif' class='gif'/>");
+              $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+              setTimeout(
+                  function() {
+                    $('.sequence5').remove();
+                    $(".gif").remove();
+                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Do you want to use a service such as Uber or Busbud</span></div></div>");
+                  }, 1300);
+              setTimeout(
+                  function() {
+                    $("#footer").append("<div class='col-xs-4 bubble bottom animated fadeInUp sequence6'><span>Yes</span></div><div class='col-xs-4 bubble bottom animated fadeInUp sequence6'><span>No</span></div>");
+                      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                  }, 2000);
+          }
+          function sequence6() {
+              $('.sequence6').addClass('animated fadeOutDown');
+              $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Alright! This is all we need for now. We're building your travel recommendations now</span></div></div>");
+              $("#chat").append("<img src='loading.gif' class='gif'/>");
+              $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+              setTimeout(
+                  function() {
+                    $('.sequence6').remove();
+                    $(".gif").remove();
+                    $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Here are flight and hotel packages based on your preferences: </span></div></div>");
+                  }, 3500);
+              setTimeout(
+                  function() {
+                    $("#chat").append("<div class='col-md-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='beach.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-md-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='alps.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-md-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='paris.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div>");
+                      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                  }, 4000);
+          }
+          
+          
+      </script>
+  </head>
+    <body>
+        
+        <h1 id="mainTitle" class="animated fadeInDown">Trippy</h1>
+        
+        <div class="content container">
+            
+            <div id="chat">
+                <div class="row"> 
+                    <div class="bubble left animated fadeInUp"><span>Welcome to Trippy, how can I help you today?</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-fixed-bottom navbar-light bg-faded footer">
+                <div class="container" id="footer">
+                    <div class="bubble bottom animated fadeInUp sequence1"><span>I'd like to go on vacation. Got any ideas?</span></div>
+                </div>
+            </nav>
+        </div>
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="parallax.js"></script>
+        
+        <script>
+        
+            $(document).ready(function() {
+
+                $(".sequence1").click(function() {
+                    $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>I'd like to go on vacation. Got any ideas?</span></div></div>");
+                    $(this).addClass("animated fadeOutDown");
+                    $("#chat").append("<img src='loading.gif' class='gif'/>")
+                    setTimeout(
+                        function() {
+                            sequence1();
+                    }, 2000);
+                });
+                
+                $(document).on('click', '.sequence2', function() {
+                    sequence2();
+                });
+                
+                $(document).on('click', '.sequence3', function() {
+                    var choice = $(this).text();
+                    $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
+                    sequence3();
+                });
+                
+                $(document).on('click', '.sequence4', function() {
+                    var choice = $(this).text();
+                    $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
+                    sequence4();
+                });
+                
+                $(document).on('click', '.sequence5', function() {
+                    var choice = $(this).text();
+                    $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
+                    sequence5();
+                });
+                
+                $(document).on('click', '.sequence6', function() {
+                    var choice = $(this).text();
+                    $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
+                    sequence6();
+                })
+                
+            
+            });
+        
+        </script>
+        
+        
+    </body>
+</html>
