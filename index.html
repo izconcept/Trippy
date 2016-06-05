@@ -14,6 +14,11 @@
       
       <script type="text/javascript">
           
+          var vibe;
+          var description;
+          var drink;
+          var uber;
+          
           function sequence1() {
               $(".gif").remove();
               $(".sequence1").remove();
@@ -96,7 +101,7 @@
                   }, 3500);
               setTimeout(
                   function() {
-                    $("#chat").append("<div class='col-md-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='beach.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-md-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='alps.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-md-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='paris.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div>");
+                    $("#chat").append("<div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='beach.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='alps.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='paris.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div>");
                       $("html, body").animate({ scrollTop: $(document).height() }, "slow");
                   }, 4000);
           }
@@ -153,24 +158,32 @@
                 });
                 
                 $(document).on('click', '.sequence3', function() {
+                    vibe = $(this).text();
+                    console.log(vibe);
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
                     sequence3();
                 });
                 
                 $(document).on('click', '.sequence4', function() {
+                    description = $(this).text();
+                    console.log(description);
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
                     sequence4();
                 });
                 
                 $(document).on('click', '.sequence5', function() {
+                    drink = $(this).text();
+                    console.log(drink);
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
                     sequence5();
                 });
                 
                 $(document).on('click', '.sequence6', function() {
+                    uber = $(this).text();
+                    console.log(uber);
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
                     sequence6();
