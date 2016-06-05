@@ -133,5 +133,5 @@ function result(home, homeAirport, dest, destAirport, destCountry, season){
  dest = dest.toUpperCase();
  destCountry = destCountry.toUpperCase();
 
- return output = dest + ", " + destCountry + "\n During " + season + ", the average flight price is $" + flightPrice +"\nCheapest hotel: " + cheapestHotel.name + " at $" + cheapestHotel.lowRateInfo.averageRate + " per night\nMost expensive hotel: " + mostExpensiveHotel.name + " at $" + mostExpensiveHotel.lowRateInfo.averageRate + " per night";
+ return output = "During " + season + ", the average flight price is $" + flightPrice +"\nCheapest hotel: " + cheapestHotel.name + " at $" + cheapestHotel.lowRateInfo.averageRate + " per night\nMost expensive hotel: " + mostExpensiveHotel.name + " at $" + mostExpensiveHotel.lowRateInfo.averageRate + " per night";
 }
