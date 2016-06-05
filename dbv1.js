@@ -149,18 +149,19 @@ function load(){
 	console.log(response);
 
 	//demo variable to test everything
-	var season = "Summer";
-	var vibe = "Relax";
-	var description="City";
-	var uber = "No";
-	var busbud = "No";
-	var age=21;
-	var drinking=true;
-	var arrayBeen = ["San Francisco","Little Cayman"];
-	var arrayLike = ["Miami","Amsterdam"];
+	//var season = "Summer";
+	//var vibe = "Relax";
+	//var description="City";
+	//var uber = "No";
+	//var busbud = "No";
+	//var age=21;
+	//var drinking=true;
+	//var arrayBeen = ["San Francisco","Little Cayman"];
+	//var arrayLike = ["Miami","Amsterdam"];
 	// you will pass the value above in load
 	//calling for evaluation
-	eval(season, vibe, description, uber, busbud, age, drinking,arrayBeen,arrayLike,response);
+	//eval(season, vibe, description, uber, busbud, age, drinking,arrayBeen,arrayLike,response);
+	return response;
 }
 //season, vibe, description, uber, busbud, age, drinking
 function eval(season, vibe, description, uber, busbud, age, drinking,arrayBeen,arrayLike,response){
