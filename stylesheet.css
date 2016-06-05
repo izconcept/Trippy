@@ -105,3 +105,14 @@
     font-family: quoteLIGHT;
     src: url("quotes/roboto/Roboto-Thin.ttf");
 }
+
+.sequence1:hover,
+.sequence2:hover,
+.sequence3:hover,
+.sequence4:hover,
+.sequence5:hover,
+.sequence6:hover,
+.sequence7:hover,
+.sequence8:hover {
+    cursor: pointer;
+}
