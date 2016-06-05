@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="animate.css" type="text/css">
       <link rel="stylesheet" href="stylesheet.css" type="text/css">
       
-      
+      <script src="dbv1.js"></script>
       <script type="text/javascript">
           
           var vibe;
@@ -88,7 +88,7 @@
                       $("html, body").animate({ scrollTop: $(document).height() }, "slow");
                   }, 2000);
           }
-          function sequence6() {
+          /*function sequence6() {
               $('.sequence6').addClass('animated fadeOutDown');
               $("#chat").append("<div class='row'><div class='bubble left animated fadeInUp'><span>Alright! This is all we need for now. We're building your travel recommendations now</span></div></div>");
               $("#chat").append("<img src='loading.gif' class='gif'/>");
@@ -101,10 +101,10 @@
                   }, 3500);
               setTimeout(
                   function() {
-                    $("#chat").append("<div style='font-size: .7em'><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='beach.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='alps.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='paris.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div></div>");
+                    /*$("#chat").append("<div style='font-size: .7em'><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='beach.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='alps.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>Miami</h4><h6 class='card-subtitle text-muted'>USA</h6></div><img class='pic' src='paris.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>The sun disappeared behind the horizon today. Experts claim it could be gone for good!</p></div></div></div></div>");
                       $("html, body").animate({ scrollTop: $(document).height() }, "slow");
                   }, 4000);
-          }
+          }*/
           
           
       </script>
@@ -186,6 +186,11 @@
                     console.log(uber);
                     var choice = $(this).text();
                     $("#chat").append("<div class='row'><div class='bubble right animated fadeInUp'><span>"+choice+"</span></div></div>");
+                    var season="Summer"
+                    var arrayBeen = ["San Francisco","Little Cayman"];
+                    var arrayLike = ["Miami","Amsterdam"];
+                    var age=21;
+                    eval(season, vibe, description, uber, uber, age, drink,arrayBeen,arrayLike,load());
                     sequence6();
                 })
                 
