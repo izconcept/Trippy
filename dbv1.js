@@ -133,7 +133,7 @@ function result(home, homeAirport, dest, destAirport, destCountry, season){
  dest = dest.toUpperCase();
  destCountry = destCountry.toUpperCase();
 
- return output = dest + ", " + destCountry + "\n During " + season + ", the average flight price is $" + flightPrice +"\nCheapest hotel: " + cheapestHotel.name + " at $" + cheapestHotel.lowRateInfo.averageRate + " per night\nMost expensive hotel: " + mostExpensiveHotel.name + " at $" + mostExpensiveHotel.lowRateInfo.averageRate + " per night";
+ return output = "Average flight price:  $" + flightPrice +"<br>Cheapest hotel: $" + cheapestHotel.lowRateInfo.averageRate + " per night<br>Most expensive hotel: $" + mostExpensiveHotel.lowRateInfo.averageRate + " per night";
 }
 
 //justin's part
@@ -219,8 +219,10 @@ function eval(season, vibe, description, uber, busbud, age, drinking,arrayBeen,a
 	console.log(result("montreal","YUL",response[secondIndex]["City"],response[secondIndex]["Airport"],response[secondIndex]["Country"],response[secondIndex]["Season"].toLowerCase()));
 	
 	console.log(result("montreal","YUL",response[thirdIndex]["City"],response[thirdIndex]["Airport"],response[thirdIndex]["Country"],response[thirdIndex]["Season"].toLowerCase()));
+	$("#chat").append("<div style='font-size: .7em'><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>"+response[firstIndex]["City"]+"</h4><h6 class='card-subtitle text-muted'>"+response[firstIndex]["Country"]+"</h6></div><img class='pic' src='beach.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>"+result("montreal","YUL",response[firstIndex]["City"],response[firstIndex]["Airport"],response[firstIndex]["Country"],response[firstIndex]["Season"].toLowerCase()) +"</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>"+response[secondIndex]["City"]+"</h4><h6 class='card-subtitle text-muted'>"+response[secondIndex]["Country"]+"</h6></div><img class='pic' src='alps.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>"+result("montreal","YUL",response[secondIndex]["City"],response[secondIndex]["Airport"],response[secondIndex]["Country"],response[secondIndex]["Season"].toLowerCase())+"</p></div></div></div><div class='col-sm-4 botpad'><div class='card' style='max-width: 240px;'><div class='card-block'><h4 class='card-title'>"+response[thirdIndex]["City"]+"</h4><h6 class='card-subtitle text-muted'>"+response[thirdIndex]["Country"]+"</h6></div><img class='pic' src='paris.jpg' alt='Photo of sunset'><div class='card-block'><p class='card-text'>"+result("montreal","YUL",response[thirdIndex]["City"],response[thirdIndex]["Airport"],response[thirdIndex]["Country"],response[thirdIndex]["Season"].toLowerCase())+"</p></div></div></div></div>");
 	//console.log(firstVal);
-	//console.log(response[secondIndex]);
+	console.log(response[secondIndex]);
 	//console.log(response[thirdIndex]);
 
 }
+
