@@ -1,0 +1,3 @@
+# Trippy
+
+Travel Recommender Bot
